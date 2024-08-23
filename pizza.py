@@ -50,9 +50,28 @@ class Pizza:
 
     @staticmethod
     def validar_elemento(elemento, opciones):
+        """  
+        Valida si un elemento está en la lista de opciones posibles.  
+        
+        Parámetros:  
+        ----------  
+        elemento : str  
+            Elemento a validar.  
+        opciones : list  
+            Lista de opciones válidas.  
+
+        Retorna:  
+        --------  
+        bool  
+            True si el elemento está en opciones, False en caso contrario.  
+        """ 
         return elemento in opciones
 
     def realizar_pedido(self):
+        """  
+        Solicita al usuario los ingredientes y tipo de masa, valida los  
+        ingresos, y establece si la pizza es válida.  
+        """
         self.ingredientes_proteicos = input("Ingrese un ingrediente proteico: ")
         self.ingredientes_vegetales = [
             input("Ingrese el primer ingrediente vegetal: "),
