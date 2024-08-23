@@ -43,6 +43,18 @@ class Pizza:
         i_proteico,
         tipo_masa,
     ):
+        """  
+        Inicializa una instancia de la clase Pizza.  
+        
+        Parámetros:  
+        ----------  
+        i_vegetal : str  
+            Ingrediente vegetal seleccionado.  
+        i_proteico : str  
+            Ingrediente proteico seleccionado.  
+        tipo_masa : str  
+            Tipo de masa para la pizza.  
+        """  
         self.i_vegetal = i_vegetal
         self.i_proteico = i_proteico
         self.tipo_masa = tipo_masa
