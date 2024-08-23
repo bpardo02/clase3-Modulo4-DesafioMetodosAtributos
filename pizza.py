@@ -1,4 +1,28 @@
 class Pizza:
+    """  
+    Clase que representa una pizza con ingredientes vegetales y proteicos,   
+    tipos de masa, y funcionalidad para realizar un pedido.  
+
+    Atributos:  
+    ----------  
+    ingredientes_vegetales : list  
+        Lista de ingredientes vegetales disponibles.  
+    ingredientes_proteicos : list  
+        Lista de ingredientes proteicos disponibles.  
+    tipos_masa : list  
+        Lista de tipos de masa disponibles.  
+    precio : float  
+        Precio base de la pizza.  
+    tamaño : str  
+        Tamaño de la pizza.  
+    
+    Métodos:  
+    --------  
+    validar_elemento(elemento, opciones):  
+        Valida si el elemento está dentro de las opciones permitidas.  
+    realizar_pedido():  
+        Proceso para realizar un pedido de pizza a través de entradas del usuario.  
+    """  
     ingredientes_vegetales = [
         "tomate",
         "aceitunas",
